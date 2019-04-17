@@ -19,7 +19,7 @@ namespace MoneyCSV2QIF.Tests.Transform {
         [Fact]
         public void LoadJsonMapping_Inv () {
 
-            var mapping = CsvToQifHelper.LoadJson ($"{Directory.GetCurrentDirectory()}/Transform/TestFiles/noninvmap.json", "NON");
+            var mapping = CsvToQifHelper.LoadJson ($"{Directory.GetCurrentDirectory()}/Transform/TestFiles/noninvmap.json", "B");
 
             var nonMap = mapping as NonInvestmentAccountsMapping<string>;
             Assert.Equal ("Date", nonMap.DateField);
@@ -37,7 +37,7 @@ namespace MoneyCSV2QIF.Tests.Transform {
 
         [Fact]
         public void LoadJsonMapping_Non () {
-            var mapping = CsvToQifHelper.LoadJson ($"{Directory.GetCurrentDirectory()}/Transform/TestFiles/invmap.json", "INV");
+            var mapping = CsvToQifHelper.LoadJson ($"{Directory.GetCurrentDirectory()}/Transform/TestFiles/invmap.json", "I");
 
             var nonMap = mapping as InvestmentAccountsMapping<string>;
 
@@ -60,7 +60,7 @@ namespace MoneyCSV2QIF.Tests.Transform {
         public void LoadJsonMapping_IncorrectType_Exception () {
             var exp = Assert.Throws<Exception> (() =>
                 CsvToQifHelper.LoadJson ($"{Directory.GetCurrentDirectory()}/Transform/TestFiles/invmap.json", "XX"));
-            Assert.Equal ("Missing account type", exp.Message);
+            Assert.Equal ("Incorrect account type", exp.Message);
         }
 
         [Fact]
@@ -121,12 +121,6 @@ namespace MoneyCSV2QIF.Tests.Transform {
             _fileFixture.AssertFiles ($"{Directory.GetCurrentDirectory()}/Transform/TestFiles/Expected/qifout.qif", _fileFixture.TempFolder + "qifout.qif");
 
         }
-
-        // [Fact]
-        // public void WriteQif_NonInvestment_With_SplitTransactionsOnly () {
-        //     var mapping = CsvToQifHelper.LoadJson ($"{Directory.GetCurrentDirectory()}/Transform/TestFiles/noninvmap.json", "NON");
-        //     var qifList = CsvToQifHelper.CreateQif (mapping, $"{Directory.GetCurrentDirectory()}/Transform/TestFiles/noninvmap_all_splits.csv");
-        // }
 
     }
 

@@ -45,22 +45,6 @@ namespace MoneyCSV2QIF {
                     }
                 });
 
-            // var converter = new CsvToQfi ();
-
-            // var mapping = new NonInvestmentAccountsMapping<string> () {
-            //     DateField = "Date", AmountField = "Amount",
-            //     ClearedField = "Clr", RefOrCheckNumberField = "Reference",
-            //     PayeeField = "Payee/Security", MemoField = "Memo/Notes",
-            //     CategoryField = "Description/Category", SplitIndicatorField = "Split",
-            //     SplitCategory = "Description/Category", SplitMemoField = "Memo/Notes",
-            //     SplitAmountField = "Amount"
-
-            // };
-
-            // // converter.Convert (mapping, "/Users/gursaranbrarrad/play/gurmitmoney/GB-CheckingCiti-2019-03-29.csv",
-            // //     "/Users/gursaranbrarrad/play/gurmitmoney/GB-CheckingCiti-2019-03-29.qif");
-            // converter.Convert (mapping, "/Users/gursaranbrarrad/play/gurmitmoney/GB-SavingsWFB-2019-03-29.csv",
-            //     "/Users/gursaranbrarrad/play/gurmitmoney/GB-SavingsWFB-2019-03-29.qif");
         }
     }
 }
