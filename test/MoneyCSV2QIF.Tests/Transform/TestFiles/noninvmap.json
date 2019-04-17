@@ -1,0 +1,13 @@
+{
+  "DateField": "Date",
+  "AmountField": "Amount",
+  "ClearedField": "Clr",
+  "RefOrCheckNumberField": "Reference",
+  "PayeeField": "Payee/Security",
+  "MemoField": "Memo/Notes",
+  "CategoryField": "Description/Category",
+  "SplitIndicatorField": "Split",
+  "SplitCategory": "Description/Category",
+  "SplitMemoField": "Memo/Notes",
+  "SplitAmountField": "Amount"
+}

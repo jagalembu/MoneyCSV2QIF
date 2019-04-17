@@ -1,0 +1,14 @@
+{
+  "DateField": "Name of CSV header column",
+  "ActionField": "Name of CSV header column",
+  "SecurityField": "Name of CSV header column",
+  "PriceField": "Name of CSV header column",
+  "QuantityField": "Name of CSV header column",
+  "TransactionAmountField": "Name of CSV header column",
+  "ClearedStatusField": "Name of CSV header column",
+  "TextField": "Name of CSV header column",
+  "MemoField": "Name of CSV header column",
+  "CommisionField": "Name of CSV header column",
+  "AccountForTransferField": "Name of CSV header column",
+  "AmountTransferedField": "Name of CSV header column"
+}

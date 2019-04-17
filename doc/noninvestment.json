@@ -1,0 +1,13 @@
+{
+  "DateField": "Name of CSV header column",
+  "AmountField": "Name of CSV header column",
+  "ClearedField": "Name of CSV header column",
+  "RefOrCheckNumberField": "Name of CSV header column",
+  "PayeeField": "Name of CSV header column",
+  "MemoField": "Name of CSV header column",
+  "CategoryField": "Name of CSV header column",
+  "SplitIndicatorField": "Name of CSV header column",
+  "SplitCategory": "Name of CSV header column",
+  "SplitMemoField": "Name of CSV header column",
+  "SplitAmountField": "Name of CSV header column"
+}

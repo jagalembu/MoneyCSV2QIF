@@ -1,0 +1,4 @@
+"Split","Date","Amount","Clr","Reference","Payee/Security","Memo/Notes","Description/Category"
+"S","5/22/2017","100","R","Check 1","Payee111","Transfer first split 1","Transfer split 1"
+"S","5/22/2017","100","C","Check 1","Payee111","transfer first split 2","transfer split 2"
+"","5/22/2017","100","C","Check 1","Payee111","Transfer no split","transfer split Category"

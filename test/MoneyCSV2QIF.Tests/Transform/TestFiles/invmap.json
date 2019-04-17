@@ -1,0 +1,14 @@
+{
+  "DateField": "Date",
+  "ActionField": "Action",
+  "SecurityField": "Security",
+  "PriceField": "Price",
+  "QuantityField": "Quantity",
+  "TransactionAmountField": "Transaction Amount",
+  "ClearedStatusField": "Clr",
+  "TextField": "Text",
+  "MemoField": "Memo",
+  "CommisionField": "Commission",
+  "AccountForTransferField": "Account Transfer",
+  "AmountTransferedField": "Amount Transfer"
+}
